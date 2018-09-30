@@ -1,16 +1,15 @@
 html {
-
+    background-color: 
     -webkit-font-smoothing: antialiased;
 }
 
 body {
-    background-color:cadetblue;
+    background-image: url(bubbles.jpg);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-
     padding: 2em 2em 4em;
-    min-height: 100%;
+
 }
 
 h1, h2, h3, h4, h5, h6 {;
@@ -24,6 +23,10 @@ h2 {
     margin-top: 1.3em;
 }
 
+ #header {
+    position: absolute;
+    top: 0;
+ }
  #footer {
     position: absolute;
     bottom: 0;
