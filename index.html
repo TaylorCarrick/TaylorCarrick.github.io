@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <head>
@@ -7,37 +8,85 @@
         <title>Taylor Carrick's Website</title>
         <meta name="description" content="Website for Taylor Carrick.">
         <link rel="stylesheet" href="main.css">
+        <style> 
+#example1 {
+    background-image: url(img_girl.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+</style>
     </head>
     <body>
-
+        
         <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
-            <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+            <button class="tablinks" onclick="openCity(event, 'About')">About Me</button>
             <button class="tablinks" onclick="openCity(event, 'Resume')">Resume</button>
             <button class="tablinks" onclick="openCity(event, 'Bucket List')">Bucket List</button>
             <button class="tablinks" onclick="openCity(event, 'Contact Me')">Contact Me</button>
         </div>
         
 
+<!-- Tab content -->
+<div id="Home" class="tabcontent">
+  <h3>Home Page</h3>
+  <p>Need to Redirect</p>
+</div>
 
-          
+<div id="About" class="tabcontent">
+  <h3>About Me</h3>
+    <p>
+    I am currently a senior graduating in Fall of 2019 at MTSU with my major being in Computer Science.
+    </p>
+</div>
+
+<div id="Resume" class="tabcontent">
+  <h3>Resume</h3>
+  <p>Place Holder for Resume put download resume link</p>
+</div>
         
+<div id="Bucket List" class="tabcontent">
+  <h3>Bucket List</h3>
+  <p>List of all the things</p>
+</div>
+        
+<div id="Contact Me" class="tabcontent">
+  <h3>Contact Me</h3>
+   <ul>     Feel free to contact me at tlc6w@mtmail.mtsu.edu or 615-710-5754
+            add images for links
+            <li><a href="https://github.com/TaylorCarrick">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/taylor-carrick/">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/TaylorCarrick2">Facebook</a></li>
+
+        </ul>
+</div>
+          
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+        <div id="example1">
         <h1>Wecome to my Website!!</h1>
         <h2>My name is Taylor Carrick</h2>
+
         
-        <!--
-            MADE WITH <3 AND JAVASCRIPT
-        -->
+       
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
         
-        <p>
-            I am currently a senior graduating in Fall of 2019 at MTSU with my major being in Computer Science.
-        </p>
-        
-        
-        <p>
-            Feel free to contact me at tlc6w@mtmail.mtsu.edu or 615-710-5754
-            
-        </p>
         
        
 
@@ -48,16 +97,9 @@
 
 
 
-
-        <ul>
-            <li><a href="https://github.com/TaylorCarrick">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/taylor-carrick/">LinkedIn</a></li>
-            <li><a href="https://www.facebook.com/TaylorCarrick2">Facebook</a></li>
-
-        </ul>
+</div>
         
-        <small>Taylor Carrick 2018</small>
-        
+<div id="footer"><small>Taylor Carrick 2018</small></div>
     </body>
 </html>
 <!--
