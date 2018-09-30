@@ -12,7 +12,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 3000px;
     padding: 2em 2em 4em;
 }
 
@@ -26,6 +26,42 @@ h2 {
     margin-top: 1.3em;
 }
 
+ /* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+} 
+
 a {
     color: #0083e8;
 }
@@ -34,9 +70,6 @@ b, strong {
     font-weight: 600;
 }
 
-samp {
-    display: none;
-}
 
 img {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
@@ -48,6 +81,7 @@ img {
     max-width: 95%;
 }
 
+
 @keyframes colorize {
     0% {
         -webkit-filter: grayscale(100%);
@@ -57,4 +91,5 @@ img {
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
     }
+
 }
