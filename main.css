@@ -37,7 +37,11 @@ h2 {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
-
+#example1 {
+    background-image: url(img_girl.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
 /* Style the buttons that are used to open the tab content */
 .tab button {
     background-color: inherit;
@@ -71,12 +75,9 @@ h2 {
 img {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    display: block;
-    margin: 1.3em auto;
-    max-width: 95%;
+    padding: 1px 3px;
 }
+
 
 
 @keyframes colorize {
