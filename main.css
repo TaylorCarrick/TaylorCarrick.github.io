@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {;
 }
 
 h2 {
-    margin-top: 1.3em;
+
 }
 
  #header {
@@ -33,13 +33,18 @@ h2 {
  }
  /* Style the tab */
 .tab {
+    position: fixed;
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
-#example1 {
+.picture {
     background-image: url(img_girl.png);
-    background-position: right;
+    height: 650px;
+    width: 400px;
+    right: 50px;
+    top: 50px;
+    position: absolute;
     background-repeat: no-repeat;
 }
 /* Style the buttons that are used to open the tab content */
