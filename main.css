@@ -1,3 +1,7 @@
+*{
+    padding: 0px;
+    //margin: 0px;
+}
 html {
     background-color: 
     -webkit-font-smoothing: antialiased;
@@ -8,40 +12,45 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    padding: 2em 2em 4em;
-
+    margin: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {;
+h1, h2, h3, h4, h5, h6{;
     color: white;
     font-weight: 600;
     line-height: 1.3;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    margin: 20px;
 }
+p{
+    margin: 20px;
+}
+li {
 
-h2 {
-
+    margin-left: 50px;
 }
 
  #header {
     position: fixed;
     top: 0;
 
-
  }
  #footer {
     position: absolute;
     bottom: 0;
+
     
  }
+#header {
+    width: 100%;
+}
  /* Style the tab */
 .tab {  
 
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    margin-left: 150px;
-    margin-right: 150px;
+
 
 }
 .picture {
@@ -53,16 +62,7 @@ h2 {
     position: absolute;
     background-repeat: no-repeat;
 }
-.logo {
-    //background-image: url(pikachu.gif);
-    height: 100px;
-    width: 100px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    background-repeat: no-repeat;
 
-}
 /* Style the buttons that are used to open the tab content */
 .tab button {
     background-color: inherit;
@@ -94,12 +94,12 @@ h2 {
     
 } 
 
-
-
 img {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
-    padding: 1px 3px;
+
+
+    margin-left: 20px;
 }
 
 
