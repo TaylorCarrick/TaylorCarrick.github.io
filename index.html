@@ -10,80 +10,101 @@
         <link rel="stylesheet" href="main.css" type="text/css">
         <script src="myScript.js"></script>
     </head>
-    <body>
-        <div id="header">
-            <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
-            <button class="tablinks" onclick="openCity(event, 'About')">About Me</button>
-            <button class="tablinks" onclick="openCity(event, 'Resume')">Resume</button>
-            <button class="tablinks" onclick="openCity(event, 'Bucket List')">Bucket List</button>
-            <button class="tablinks" onclick="openCity(event, 'Contact Me')">Contact Me</button>
-            </div>    
-        </div>
-<!-- Tab content -->
-<div id="Home" class="tabcontent"> 
-    <br><br>
-<h1>Welcome to my Website!! </h1>
-    <h2>My name is Taylor Carrick</h2></div>
-<div id="About" class="tabcontent">
-  <h3>About Me</h3>
-    <p>
-    I am currently a senior graduating in Fall of 2019 at MTSU with my major being in Computer Science.
-    </p>
-</div>
-
-<div id="Resume" class="tabcontent" >
-  <h3>Resume</h3>
-  <p>Click to download</p>
-    <a href="Resume%20of%20Taylor%20Carrick%202018.pdf" download>
-    <img src="doc.png" alt="Resume" width="50" height="65" align="left">
-    <br>
-</a>
-</div>
-        
-<div id="Bucket List" class="tabcontent">
-  <h3>Bucket List</h3>
-  <p>List of all the things</p>
-    <ul> 
-            <li>Go to another country</li>
-            <li>Learn 5 languages</li>
-
-    </ul>
-</div>
-        
-<div id="Contact Me" class="tabcontent">
-  <h3>Contact Me</h3>
-       <p>Feel free to contact me at tlc6w@mtmail.mtsu.edu or 615-710-5754<br></p>
-    <br>
     
-            <a href="https://github.com/TaylorCarrick"><img src="github.png" alt="GitHub" width="50" height="50" align="left"></a>
-            <a href="https://www.linkedin.com/in/taylor-carrick/"><img src="linkedin.png" alt="LinkedIn" width="50" height="50" align="left"></a>
-            <a href="https://www.facebook.com/TaylorCarrick2"><img src="facebook.png" alt="Facebook" width="50" height="50" align="left"></a>
-    <br>
-</div>
-          
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
+       <body>
+        <header>
+            <nav>
+                <div class="navbar">
+                    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="About.html"><i class="fa fa-fw fa-search"></i> About Me</a>
+                    <a href="Resume.html"><i class="fa fa-fw fa-envelope"></i> Resume</a>
+                    <a href="Bucket.html"><i class="fa fa-fw fa-envelope"></i> Bucket List</a>
+                    <a href="Contact.html"><i class="fa fa-fw fa-user"></i> Contact Me</a>
+                </div>      
+            </nav>
+        </header>
+        
+    <main>
+        <br><br>
+        <h1>Welcome to my Website!! </h1>
+        <h2>I am Taylor Carrick </h2>
+        
+        
+         <!-- Slideshow container -->
+<div class="slideshow-container">
 
-    <div class = "picture"></div>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="images/firststepjump.jpg" style="width:100%">
+    <div class="text">FirstStep Undergraduate Research</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/firststeprobo.jpg" style="width:100%">
+    <div class="text">FirstStep Robotics Research</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/queen.jpg" style="width:100%">
+    <div class="text">JROTC Queen</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+                
+    </main>
+
+        
+
         <p><br><br>
             This website is currently under construction   
         </p>      
-<div id="footer"><small>Taylor Carrick Oct 9th 2018</small></div>
+<footer><small>Taylor Carrick <time>Oct 15th 2018</time></small></footer>
         
+           
+           
+       <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>    
+           
+           
+           
+           
     </body>
     
 <script type="application/ld+json">
