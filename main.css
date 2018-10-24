@@ -16,15 +16,15 @@ body {
     font-size: 16px;
     line-height: 1.5;
     background-color: gray;
-    height: 81em;
+    height: 100em;
     margin: 1%;
     opacity: 0.90;
 }
 
 main{
     margin: 20px;
-
 }
+
 h1, h2, h3, h4, h5, h6{;
     text-align: center;
     color: white;
@@ -47,8 +47,8 @@ li {
  header {
     position: auto;
     top: 0;
-
  }
+
  footer {
     
     position: fixed;
@@ -56,28 +56,13 @@ li {
      width: 98%;
      color: white;
      background:  #555;
-
  }
-
-//.picture {
-    background-image: url(images/img_girl.png);
-    height: 650px;
-    width: 100%;
-
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-
 
 img {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
     margin-right: 10px;
-
 }
-
-
 
 @keyframes colorize {
     0% {
@@ -87,8 +72,7 @@ img {
     100% {
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
-    } 
-    
+    }    
 }
 
 * {box-sizing:border-box}
@@ -98,8 +82,6 @@ img {
   max-width: 1000px;
     position: relative;
   margin: auto;
-    
-
 }
 
 /* Hide the images by default */
@@ -219,8 +201,8 @@ img {
     height: 100px;
     font-size: 4.3em;
     text-align: center;
-    font-family:cursive;
-    color:black;
+    font-family: cursive;
+    color: black;
     background-color: grey;
 
 }
@@ -236,5 +218,40 @@ img {
 } 
 
 .profileimg{
+    float:left;
     height: 200px;
 }
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: black;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+} 
