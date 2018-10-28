@@ -62,6 +62,8 @@ img {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
     margin-right: 10px;
+    box-shadow: 5px 5px  10px rebeccapurple;
+    border-radius: 10px;
 }
 
 @keyframes colorize {
@@ -155,9 +157,9 @@ img {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.0s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.0s;
 }
 
 @-webkit-keyframes fade {
@@ -213,8 +215,7 @@ img {
   .navbar a {
     float: none;
     display: block;
-  }
-    
+  }   
 } 
 
 .profileimg{
