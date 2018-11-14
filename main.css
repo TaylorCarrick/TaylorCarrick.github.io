@@ -6,7 +6,7 @@
 html {
     -webkit-font-smoothing: antialiased;
     background-image: url(images/bubbles.jpg);
-    
+
 }
 
 body {
@@ -18,9 +18,12 @@ body {
     height: 100em;
     margin: 1%;
     opacity: 0.90;
+
+
 }
 
 main{
+
     margin: 20px;
 }
 
@@ -254,3 +257,5 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 } 
+
+

@@ -1,7 +1,7 @@
 
 var d = new Date();
 d.setFullYear(2018, 10, 28);
-document.getElementsByTagName("footer")[0].getElementsByTagName("small")[0].innerHTML= "Taylor Carrick Last Updated: " + "October 28th 2018" + " Currently Under Construction";
+document.getElementsByTagName("footer")[0].getElementsByTagName("small")[0].innerHTML = "Taylor Carrick Last Updated: " + "November 14th 2018" + " Currently Under Construction";
 
 var slideIndex = 1;
 showSlides(slideIndex);
