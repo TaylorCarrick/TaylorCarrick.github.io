@@ -22,6 +22,11 @@ body {
 
 }
 
+article{
+    float:left;
+    margin: 20px;
+    
+}
 main{
 
     margin: 20px;
